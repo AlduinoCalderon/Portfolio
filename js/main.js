@@ -4,13 +4,17 @@ let typewriter = new Typewriter(app, {
   loop: true,
   delay: 75,
 });
-let firststring ='Experienced Developer and Engineer';
-let secondstring ='Driven by innovation and technology!';
+let firststring ='Enthusiastic Developer and Engineer';
+let secondstring ='Future Data Scientist';
+let thirdstring ='Driven by innovation and technology!';
 typewriter
   .pauseFor(933)
   .typeString(firststring)
-  .pauseFor(777)
+  .pauseFor(3777)
   .deleteChars(firststring.length)
   .typeString(secondstring)
-  .pauseFor(777)
+  .pauseFor(3777)
+  .deleteChars(secondstring.length)
+  .typeString(thirdstring)
+  .pauseFor(3777)
   .start();
