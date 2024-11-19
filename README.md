@@ -15,11 +15,13 @@ In this project, I created a basic webpage using HTML. The page is structured wi
 
 ## How to View the Project
 1. Clone this repository: 
-```git clone https://github.com/AlduinoCalderon/Portfolio.git
-```
+```bash
+git clone https://github.com/AlduinoCalderon/Portfolio.git
+
 2. Open the index.html file in any web browser to view the project locally.
 
-3. Alternatively, visit the live version of the project [\here\](https://alduinocalderon.github.io/Portfolio/)
+3. Alternatively, visit the live version of the project [here](https://alduinocalderon.github.io/Portfolio/)
+
 
 ## How to Deploy
 1. Create a GitHub repository for the project.
