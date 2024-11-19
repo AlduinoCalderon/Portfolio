@@ -28,7 +28,7 @@ git clone https://github.com/AlduinoCalderon/Portfolio.git
 2. Push your code to the repository.
 3. Enable GitHub Pages in the repository settings to publish the project online.
 
-# Technologies Used
+## Technologies Used
 - HTML5
 - CSS3
 - JavaScript
