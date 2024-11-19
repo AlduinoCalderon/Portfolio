@@ -23,11 +23,6 @@ git clone https://github.com/AlduinoCalderon/Portfolio.git
 3. Alternatively, visit the live version of the project [here](https://alduinocalderon.github.io/Portfolio/)
 
 
-## How to Deploy
-1. Create a GitHub repository for the project.
-2. Push your code to the repository.
-3. Enable GitHub Pages in the repository settings to publish the project online.
-
 ## Technologies Used
 - HTML5
 - CSS3
