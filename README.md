@@ -17,7 +17,7 @@ In this project, I created a basic webpage using HTML. The page is structured wi
 1. Clone this repository: 
 ```bash
 git clone https://github.com/AlduinoCalderon/Portfolio.git
-
+```
 2. Open the index.html file in any web browser to view the project locally.
 
 3. Alternatively, visit the live version of the project [here](https://alduinocalderon.github.io/Portfolio/)
@@ -30,6 +30,8 @@ git clone https://github.com/AlduinoCalderon/Portfolio.git
 
 # Technologies Used
 - HTML5
+- CSS3
+- JavaScript
 - Git
 - GitHub Pages
 ## License
