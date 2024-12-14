@@ -2,6 +2,7 @@ body {
   font-family: 'Roboto', sans-serif;
   background-color: #121212;
   color: #ffffff;
+  margin-top: 0;
 }
 
 .navbar-dark .navbar-brand, .navbar-dark .nav-link {
@@ -26,9 +27,18 @@ body {
   height: auto;
 }
 
-#typewriter {
-  font-size: 1.5rem;
+h1, h2, h3, h4 {
   color: #00ff7f;
+}
+
+.card {
+  background-color: #1c1c1c;
+  border: none;
+  margin-bottom: 1.5rem;
+}
+
+.card-body {
+  color: #ffffff;
 }
 
 a.btn-outline-light {
@@ -40,18 +50,28 @@ a.btn-outline-light:hover {
   background-color: #00ff7f;
   color: #121212;
 }
+#skills ul li img {
+  height: 27px; 
+  width: auto;
+  margin: 5px;
+}
 
 footer {
   background-color: #1c1c1c;
 }
 
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+ul li {
+  margin-bottom: 0.5rem;
+}
+
 @media (max-width: 768px) {
   .profile-pic-container {
-      width: 120px;
-      height: 120px;
-  }
-
-  #typewriter {
-      font-size: 1.2rem;
+    width: 120px;
+    height: 120px;
   }
 }
