@@ -6,7 +6,7 @@ body {
   margin: 0;
   overflow-x: hidden;
   transition: background 0.5s ease;
-  cursor: none; /* Hide original cursor */
+  cursor: none !important; /* Force hide default cursor */
 }
 
 /* Scrollbar styling */
@@ -29,6 +29,7 @@ a {
   font-weight: bold;
   color: inherit;
   transition: all 0.3s ease;
+  cursor: none !important; /* Ensure links don't show default cursor */
 }
 
 .accent-text {
@@ -257,6 +258,7 @@ a.btn-outline-light, button.btn-outline-light {
   overflow: hidden;
   z-index: 1;
   transition: all 0.4s ease;
+  cursor: none !important; /* Ensure buttons don't show default cursor */
 }
 
 a.btn-outline-light::before, button.btn-outline-light::before {
@@ -368,11 +370,13 @@ form {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(5px);
   transition: all 0.4s ease;
+  cursor: none !important;
 }
 
 form:hover {
   background: rgba(40, 40, 40, 0.8);
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+  cursor: none !important;
 }
 
 .form-control {
@@ -406,6 +410,7 @@ form:hover {
   transform: translateY(20px);
   opacity: 0;
   animation: fadeDown 0.5s forwards;
+  cursor: none !important;
 }
 
 @keyframes fadeDown {
@@ -456,12 +461,12 @@ form:hover {
   }
 }
 
-/* Footer styling - REDUCED SIZE */
+/* Footer styling - SIGNIFICANTLY REDUCED SIZE */
 footer {
   background: linear-gradient(to top, #131313, #1c1c1c);
-  padding: 2rem 0 1rem; /* Reduced padding */
+  padding: 0.1rem 0 0.5rem; /* Further reduced padding */
   position: relative;
-  margin-top: 3rem; /* Reduced margin */
+  margin-top: 0.2rem; /* Further reduced margin */
 }
 
 footer::before {
@@ -475,22 +480,23 @@ footer::before {
 }
 
 .social-icons {
-  margin-bottom: 1rem; /* Reduced margin */
+  margin-bottom: 0.5rem; /* Further reduced margin */
 }
 
 .social-icons a {
   margin: 0 10px;
+  cursor: none !important; /* Ensure social icons don't show default cursor */
 }
 
-/* Back to top button - FIXED POSITION */
+/* Back to top button - IMPROVED FIXED POSITION */
 .btn-back-to-top {
-  position: fixed;
-  bottom: 30px;
-  right: 30px; /* Fixed position to the right */
-  width: 50px;
-  height: 50px;
+  position: center;
+  bottom: 2rem; /* Moved up */
+  right: -4.5rem;
+  width: 40px; /* Slightly smaller */
+  height: 40px; /* Slightly smaller */
   border-radius: 50%;
-  background-color: rgba(20, 20, 20, 0.7);
+  background-color: rgba(20, 20, 20, 0.9); /* More opaque */
   border: 2px solid #00ff7f;
   color: #00ff7f;
   display: flex;
@@ -499,10 +505,11 @@ footer::before {
   opacity: 0;
   visibility: hidden;
   transition: all 0.4s ease;
-  z-index: 99;
+  z-index: 1100; /* Increased z-index to ensure visibility */
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(5px);
   animation: pulse 2s infinite;
+  cursor: none !important; /* Ensure button doesn't show default cursor */
 }
 
 .btn-back-to-top:hover {
@@ -537,12 +544,12 @@ footer::before {
   }
 }
 
-/* Cursor effects - IMPROVED */
+/* Cursor effects - IMPROVED FOR LINKS */
 .custom-cursor {
   position: fixed;
   width: 30px;
   height: 30px;
-  border: 2px solid rgba(0, 255, 127, 0.6); /* More transparent */
+  border: 2px solid rgba(0, 255, 127, 0.6);
   border-radius: 50%;
   pointer-events: none;
   transform: translate(-50%, -50%);
@@ -555,7 +562,7 @@ footer::before {
   position: fixed;
   width: 8px;
   height: 8px;
-  background-color: rgba(0, 255, 127, 0.8); /* More transparent */
+  background-color: rgba(0, 255, 127, 0.8);
   border-radius: 50%;
   pointer-events: none;
   transform: translate(-50%, -50%);
@@ -563,19 +570,27 @@ footer::before {
   transition: transform 0.15s, width 0.3s, height 0.3s, background-color 0.3s;
 }
 
-/* Cursor hover states */
-.cursor-hover {
+/* Updated cursor hover states for links */
+a:hover ~ .custom-cursor,
+button:hover ~ .custom-cursor,
+.nav-link:hover ~ .custom-cursor,
+.navbar-brand:hover ~ .custom-cursor,
+.btn:hover ~ .custom-cursor {
   width: 50px;
   height: 50px;
-  border-color: rgba(0, 255, 127, 0.3); /* More transparent */
+  border-color: rgba(0, 255, 127, 0.3);
   background-color: rgba(0, 255, 127, 0.1);
   mix-blend-mode: normal;
 }
 
-.dot-hover {
+a:hover ~ .cursor-dot,
+button:hover ~ .cursor-dot,
+.nav-link:hover ~ .cursor-dot,
+.navbar-brand:hover ~ .cursor-dot,
+.btn:hover ~ .cursor-dot {
   width: 4px;
   height: 4px;
-  background-color: rgba(255, 255, 255, 0.8); /* More transparent */
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
 /* Responsive adjustments */
@@ -598,14 +613,14 @@ footer::before {
   }
   
   footer {
-    padding: 1.5rem 0 0.5rem; /* Even more reduced for mobile */
+    padding: 0.8rem 0 0.3rem; /* Even more reduced for mobile */
   }
   
   .btn-back-to-top {
-    bottom: 20px;
-    right: 20px;
-    width: 40px;
-    height: 40px;
+    bottom: 15px;
+    right: 15px;
+    width: 35px;
+    height: 35px;
   }
 }
 
@@ -693,9 +708,9 @@ footer::before {
 /* Footer wave styles */
 .footer-wave {
   display: block;
-  width: 100%;
-  margin-top: -80px; /* Reduced margin */
+  width: 30%;
+  margin-top: -50px; /* Reduced margin */
   margin-bottom: -5px;
   position: relative;
   z-index: -1;
-} 
+}
