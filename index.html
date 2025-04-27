@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aldo Calderón's Portfolio</title>
+    <title>Alduino Calderón's Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./styles/styles.css">
@@ -14,6 +14,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
+    <link rel="icon" type="image/png" sizes="96x96" href="./assets/favicon-96x96.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-touch-icon.png">
+    <link rel="manifest" href="./assets/site.webmanifest">
 </head>
 <body>
     <header>
@@ -48,12 +53,14 @@
                 <div class="col-md-4">
                     <div class="card">
                         <div class="card-body text-center">
-                            <div class="profile-pic-container">
-                                <img src="https://cataas.com/cat/black,cute?type=square" alt="Aldo Calderón" class="profile-pic">
+                            <div class="profile-pic-container mb-4">
+                                <img src="https://github.com/AlduinoCalderon.png" alt="Alduino Calderón" class="profile-pic">
                             </div>
-                            <h3 class="card-title mt-3">Aldo Calderón</h3>
-                            <span id="typewriter"></span>
-                            <p class="card-text">Tech Innovation Engineer | CTO at <a href="http://www.zaachilaradio.com" target="_blank">Zaachila Radio</a></p>
+                            <div class="profile-info">
+                                <h3 class="card-title">Alduino Calderón</h3>
+                                <span id="typewriter"></span>
+                                <p class="card-text">Tech Innovation Engineer | CTO at <a href="http://www.zaachilaradio.com" target="_blank">Zaachila Radio</a></p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -64,7 +71,7 @@
                             <p>I'm an experienced developer and engineer specialized in AIoT, automation, and software development.</p>
                             <p>I have a strong interest in mathematics, data science, and full stack development.</p>
                             <p>Passionate about technology and innovation, always eager to learn and take on new challenges.</p>
-                            <p>As a future Data Scientist, I’m constantly expanding my knowledge and exploring new technologies, with a focus on rapid learning and adapting to new challenges. I may not have all the answers yet, but I’m committed to finding solutions and growing along the way. I’m eager to collaborate on projects that push my limits and allow me to contribute in meaningful ways.</p>
+                            <p>As a future Data Scientist, I'm constantly expanding my knowledge and exploring new technologies, with a focus on rapid learning and adapting to new challenges. I may not have all the answers yet, but I'm committed to finding solutions and growing along the way. I'm eager to collaborate on projects that push my limits and allow me to contribute in meaningful ways.</p>
                             <p>I enjoy being part of teams where I can both learn and contribute value with my skills in:</p>
                             <ul>
                                 <li>Automation Systems for radio and industrial applications.</li>
@@ -141,10 +148,28 @@
                 </div>
                 <div class="row certifications">
                     <h2>Certifications</h2>
-                    <div data-iframe-width="270" data-iframe-height="270" data-share-badge-id="e5617ae7-93d2-4205-b84c-20a5a7723316" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
-                    <div data-iframe-width="270" data-iframe-height="270" data-share-badge-id="a47f702c-0e6f-4823-a074-d5caa79dec11" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
-                    <div data-iframe-width="270" data-iframe-height="270" data-share-badge-id="92ddc2eb-3d87-4982-9d5e-9c1f26b97b66" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
-                    <div data-iframe-width="270" data-iframe-height="270" data-share-badge-id="10a671f8-be0e-458e-bf08-c7dc35786c14" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+                    <div class="certificates-container">
+                        <a href="https://www.credly.com/badges/e5617ae7-93d2-4205-b84c-20a5a7723316" target="_blank" class="certificate-card">
+                            <div class="certificate-content">
+                                <img src="https://raw.githubusercontent.com/AlduinoCalderon/Portfolio/refs/heads/master/assets/images/perform-predictive-data-analysis.png" alt="Perform Predictive Data Analysis Certificate" class="certificate-img">
+                            </div>
+                        </a>
+                        <a href="https://www.credly.com/badges/a47f702c-0e6f-4823-a074-d5caa79dec11" target="_blank" class="certificate-card">
+                            <div class="certificate-content">
+                                <img src="https://raw.githubusercontent.com/AlduinoCalderon/Portfolio/refs/heads/master/assets/images/certificado-de-analisis-de-datos-de-google.png" alt="Google Data Analysis Certificate" class="certificate-img">
+                            </div>
+                        </a>
+                        <a href="https://www.credly.com/badges/92ddc2eb-3d87-4982-9d5e-9c1f26b97b66" target="_blank" class="certificate-card">
+                            <div class="certificate-content">
+                                <img src="https://raw.githubusercontent.com/AlduinoCalderon/Portfolio/refs/heads/master/assets/images/google-ai-essentials.png" alt="Google AI Essentials Certificate" class="certificate-img">
+                            </div>
+                        </a>
+                        <a href="https://www.credly.com/badges/10a671f8-be0e-458e-bf08-c7dc35786c14" target="_blank" class="certificate-card">
+                            <div class="certificate-content">
+                                <img src="https://raw.githubusercontent.com/AlduinoCalderon/Portfolio/refs/heads/master/assets/images/google-cloud-computing-foundations-certificate.png" alt="Google Cloud Computing Certificate" class="certificate-img">
+                            </div>
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -152,68 +177,118 @@
             <h2>Projects</h2>
             <div class="row">
                 <div class="col-md-4">
-                    <div class="card">
-                        <div class="image-container">
-                            <img src="https://www.ecoturismoenoaxaca.com/imagenes/cabanaselmogotedonaisabel/cabanaelmogotedonaisabel2.jpg" class="card-img-top" alt="Cabins">
+                    <a href="https://cabinsfront.vercel.app" target="_blank" class="card-link">
+                        <div class="card">
+                            <div class="image-container">
+                                <img src="https://www.ecoturismoenoaxaca.com/imagenes/cabanaselmogotedonaisabel/cabanaelmogotedonaisabel2.jpg" class="card-img-top" alt="Cabins">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Cabins in San José del Pacífico</h5>
+                                <p class="card-text">Booking system for cabins in San José del Pacífico.</p>
+                            </div>
                         </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Cabins in San José del Pacífico</h5>
-                            <p class="card-text">Booking system for cabins in San José del Pacífico.</p>
-                            <a href="https://cabinsfront.vercel.app" target="_blank" class="btn btn-outline-light me-2">View Project</a>
+                    </a>
+                </div>
+                 <div class="col-md-4">
+                    <a href="https://koriconnect.vercel.app" target="_blank" class="card-link">
+                        <div class="card">
+                            <div class="image-container">
+                                <img src="https://raw.githubusercontent.com/AlduinoCalderon/Portfolio/refs/heads/master/assets/images/KoriNet.png" class="card-img-top" alt="Kōri Net">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Kōri Net (氷ネット)</h5>
+                                <p class="card-text">A real-time web interface connecting cold storage owners with potential renters.</p>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
                 <div class="col-md-4">
-                    <div class="card">
-                        <div class="image-container">
-                            <img src="https://cataas.com/cat/aw9dDJxwYzjm1ieU?position=center" class="card-img-top" alt="Project 2">
+                    <a href="https://alduino-animals.vercel.app" target="_blank" class="card-link">
+                        <div class="card">
+                            <div class="image-container">
+                                <img src="https://cataas.com/cat/aw9dDJxwYzjm1ieU?position=center" class="card-img-top" alt="Project 2">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Animal Support Network</h5>
+                                <p class="card-text">Social network for the support of animals in street situations and abuse.</p>
+                            </div>
                         </div>
-                         <div class="card-body">
-                            <h5 class="card-title">Animal Support Network</h5>
-                            <p class="card-text">Social network for the support of animals in street situations and abuse.</p>
-                            <a href="https://alduino-animals.vercel.app" target="_blank" class="btn btn-outline-light me-2">View Project</a>
-                        </div>
-                    </div>
+                    </a>
                 </div>
             </div>
         </section>
         <section id="contact" class="mt-5">
             <h2>Contact</h2>
-            <form action="https://formspree.io/f/mwpplwnk" method="POST">
-                <div class="mb-3">
-                    <label for="name" class="form-label">Name</label>
-                    <input type="text" class="form-control" id="name" name="name" required>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="gravatar-card">
+                        <div class="gravatar-header">
+                            <img src="https://2.gravatar.com/avatar/9c0c0b03222bf8affc115ed9298429146cbe5c72c719c7dfcf5f3d17d9d9dbb4?s=256" alt="Alduino Calderon" class="gravatar-avatar">
+                            <div class="gravatar-info">
+                                <h4>Alduino Calderon</h4>
+                                <p>CTO, Zaachila Radio</p>
+                                <p>México</p>
+                            </div>
+                        </div>
+                        <div class="gravatar-body">
+                            <p>Data Science | IoT & Automation Enthusiast | Statistical Analysis
+                            Passionate about solving complex problems and transforming data into actionable insights that drive strategic decision-making.</p>
+                        </div>
+                        <div class="gravatar-social">
+                            <a href="https://www.linkedin.com/in/alduinocalderon" target="_blank">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="https://github.com/AlduinoCalderon" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://alduinocalderon.link" target="_blank">
+                                <i class="fas fa-globe"></i>
+                            </a>
+                        </div>
+                    </div>
                 </div>
-                <div class="mb-3">
-                    <label for="email" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="email" name="_replyto" required>
+                <div class="col-md-6">
+                    <form action="https://formspree.io/f/mwpplwnk" method="POST">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="name" name="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" name="_replyto" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-outline-light"><i class="fas fa-envelope"></i> Send</button>
+                    </form>
                 </div>
-                <div class="mb-3">
-                    <label for="message" class="form-label">Message</label>
-                    <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
-                </div>
-                <button type="submit" class="btn btn-outline-light"><i class="fas fa-envelope"></i> Send</button>
-            </form>
+            </div>
         </section>
     </main>
-    <footer class="bg-dark text-white text-center py-3 mt-5">
-        
-        <div class="social-icons">
-            <p>You can find more about me on:</p>
-            <a href="https://www.linkedin.com/in/alduinocalderon/" target="_blank" class="btn btn-outline-light me-2"><i class="fab fa-linkedin"></i> LinkedIn</a>
-            <a href="https://github.com/AlduinoCalderon" target="_blank" class="btn btn-outline-light me-2"><i class="fab fa-github"></i> GitHub</a>
-            <a href="https://www.upwork.com/freelancers/~01b0a24881b1ddd018?companyReference=1760375117226459137&mp_source=share" target="_blank" class="btn btn-outline-light"><i class="fab fa-upwork"></i> Upwork</a>
-            <p class="mt-3">Or send me an email at <a href="mailto:alduinocalderon@gmail.com" class="btn btn-outline-light"><i class="fas fa-envelope"></i> alduinocalderon@gmail.com</a></p>
+    <footer class="bg-dark text-white text-center py-2 mt-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-auto">
+                    <button id="back-to-top" class="btn btn-outline-light rounded-circle">
+                        <i class="fas fa-arrow-up"></i>
+                    </button>
+                </div>
+                <div class="col">
+                    <div class="social-links">
+                        <p class="mb-2 d-lg-inline me-3">You can find more about me on:</p>
+                        <div class="d-flex flex-wrap justify-content-center justify-content-lg-start gap-2">
+                            <a href="https://www.linkedin.com/in/alduinocalderon/" target="_blank" class="btn btn-outline-light"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                            <a href="https://github.com/AlduinoCalderon" target="_blank" class="btn btn-outline-light"><i class="fab fa-github"></i> GitHub</a>
+                            <a href="https://www.upwork.com/freelancers/~01b0a24881b1ddd018" target="_blank" class="btn btn-outline-light"><i class="fab fa-upwork"></i> Upwork</a>
+                            <a href="mailto:alduinocalderon@gmail.com" class="btn btn-outline-light"><i class="fas fa-envelope"></i> alduinocalderon@gmail.com</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="mt-2 mb-0">&copy; 2025 Alduino Calderón. All rights reserved.</p>
         </div>
-        <p>&copy; 2025 Aldo Calderón. All rights reserved.</p>
-        <div class="footer-wave">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-                <path fill="#131313" fill-opacity="1" d="M0,128L48,117.3C96,107,192,85,288,90.7C384,96,480,128,576,122.7C672,117,768,75,864,74.7C960,75,1056,117,1152,133.3C1248,149,1344,139,1392,133.3L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
-            </svg>
-        </div>
-        <button id="back-to-top" class="btn btn-outline-light btn-back-to-top">
-            <i class="fas fa-arrow-up"></i>
-        </button>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>

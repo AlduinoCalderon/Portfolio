@@ -98,6 +98,15 @@ a {
   position: relative;
   box-shadow: 0 0 30px rgba(0, 255, 127, 0.5);
   transition: all 0.5s ease;
+  margin: 0 auto;
+}
+
+.profile-info {
+  margin-top: 1rem;
+}
+
+.profile-info h3 {
+  margin-bottom: 0.5rem;
 }
 
 .profile-pic-container:hover {
@@ -219,6 +228,7 @@ h2:hover::after {
 .card:hover {
   transform: translateY(-10px);
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
+  
 }
 
 .card:hover::before {
@@ -226,21 +236,26 @@ h2:hover::after {
 }
 
 .row.certifications {
-  background: rgba(46, 46, 46, 0.7);
+  margin-top: 2rem;
+  padding: 2rem;
+  background: rgba(30, 30, 30, 0.6);
   border-radius: 12px;
-  padding: 2rem 1rem;
-  margin-bottom: 1.5rem;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-  transition: all 0.4s ease;
 }
 
-.row.certifications:hover {
-  background: rgba(50, 50, 50, 0.8);
+.row.certifications h2 {
+  margin-bottom: 2rem;
+  text-align: center;
+  width: 100%;
+}
+
+.row.certifications > div {
+  margin: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.row.certifications > div:hover {
   transform: translateY(-5px);
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
 }
 
 .card-body {
@@ -461,31 +476,67 @@ form:hover {
   }
 }
 
-/* Footer styling - SIGNIFICANTLY REDUCED SIZE */
+/* Footer styling */
 footer {
   background: linear-gradient(to top, #131313, #1c1c1c);
-  padding: 0.1rem 0 0.5rem; /* Further reduced padding */
+  padding: 1rem 0;
   position: relative;
-  margin-top: 0.2rem; /* Further reduced margin */
+  margin-top: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-footer::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 1px;
-  background: linear-gradient(90deg, transparent, #00ff7f, transparent);
+footer .social-icons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
 }
 
-.social-icons {
-  margin-bottom: 0.5rem; /* Further reduced margin */
+footer .social-icons p {
+  color: #888;
+  margin-bottom: 0.5rem;
 }
 
-.social-icons a {
-  margin: 0 10px;
-  cursor: none !important; /* Ensure social icons don't show default cursor */
+footer .btn {
+  padding: 0.5rem 1rem;
+  min-width: 120px;
+}
+
+#back-to-top {
+  min-width: auto;
+  padding: 0.5rem;
+  margin-right: 2rem;
+}
+
+footer a.btn-outline-light {
+  border-color: #00ff7f;
+  color: #00ff7f;
+}
+
+footer a.btn-outline-light:hover {
+  background-color: #00ff7f;
+  color: #121212;
+}
+
+@media (max-width: 768px) {
+  footer .d-flex {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  #back-to-top {
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+  
+  footer .social-icons {
+    width: 100%;
+  }
+  
+  footer .btn {
+    min-width: auto;
+    margin-bottom: 0.5rem;
+  }
 }
 
 /* Back to top button - IMPROVED FIXED POSITION */
@@ -713,4 +764,282 @@ button:hover ~ .cursor-dot,
   margin-bottom: -5px;
   position: relative;
   z-index: -1;
+}
+
+/* Gravatar Card Styles */
+.gravatar-card {
+  background: #1a1a1a;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.gravatar-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.gravatar-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.gravatar-info h4 {
+  margin: 0;
+  color: #fff;
+}
+
+.gravatar-info p {
+  margin: 5px 0;
+  color: #888;
+}
+
+.gravatar-body {
+  margin-bottom: 20px;
+  color: #ddd;
+}
+
+.gravatar-social {
+  display: flex;
+  gap: 15px;
+}
+
+.gravatar-social a {
+  color: #fff;
+  font-size: 20px;
+  transition: color 0.3s ease;
+}
+
+.gravatar-social a:hover {
+  color: #007bff;
+}
+
+/* Certificates Container */
+.certificates-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  width: 100%;
+}
+
+.certificate-card {
+  aspect-ratio: 1;
+  min-height: 250px;
+  position: relative;
+  transition: all 0.3s ease;
+  border-radius: 15px;
+  overflow: hidden;
+  background: rgba(20, 20, 20, 0.6);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+  cursor: none !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.certificate-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+}
+
+.certificate-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.certificate-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 255, 127, 0.2);
+}
+
+.certificate-card:hover .certificate-img {
+  transform: scale(1.05);
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .certificates-container {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    padding: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .certificates-container {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .certificate-card {
+    min-height: 200px;
+  }
+
+  .profile-pic-container {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+@media (max-width: 480px) {
+  .certificates-container {
+    grid-template-columns: 1fr;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .certificate-card {
+    min-height: 180px;
+  }
+}
+
+/* Footer styles */
+footer {
+  background: linear-gradient(to top, #131313, #1c1c1c);
+  padding: 1rem 0;
+  position: relative;
+  margin-top: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+footer .social-icons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer .social-icons .d-flex {
+  display: flex;
+  gap: 10px;
+  flex-wrap: nowrap;
+}
+
+footer .btn {
+  white-space: nowrap;
+  padding: 0.5rem 1rem;
+}
+
+#back-to-top {
+  padding: 0.5rem;
+  margin-right: 2rem;
+}
+
+@media (max-width: 768px) {
+  .certificates-container {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .certificate-card {
+    height: 100px;
+    width: 100%;
+  }
+
+  .certificate-card:hover {
+    height: 300px;
+  }
+
+  footer .social-icons .d-flex {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #back-to-top {
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+}
+
+.btn-sm {
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+}
+
+/* Project card styles */
+.card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+.card-link:hover {
+  transform: translateY(-5px);
+  color: inherit;
+}
+
+.card-link:hover .card {
+  box-shadow: 0 8px 16px rgba(0, 255, 127, 0.2);
+}
+
+.card-link .card {
+  transition: all 0.3s ease;
+}
+
+/* Footer styles */
+footer {
+  background: linear-gradient(to top, #131313, #1c1c1c);
+  padding: 1rem 0;
+  position: relative;
+  margin-top: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.social-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width: 992px) {
+  .social-links {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+#back-to-top {
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+
+/* Credly dark theme */
+.certificate-card {
+  background: #1a1a1a;
+}
+
+.certificate-content iframe {
+  filter: invert(1) hue-rotate(180deg);
+}
+
+@media (max-width: 768px) {
+  .social-links {
+    gap: 10px;
+  }
+  
+  footer .btn {
+    width: 100%;
+  }
+  
+  #back-to-top {
+    margin: 0 auto 1rem;
+  }
 }
