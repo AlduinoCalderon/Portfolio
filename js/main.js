@@ -41,7 +41,7 @@ function initTypewriter() {
   });
   
   let firstString = 'Enthusiastic Developer and Engineer';
-  let secondString = 'Future Data Scientist';
+  let secondString = 'Data Scientist';
   let thirdString = 'Driven by innovation and technology!';
   
   typewriter
