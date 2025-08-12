@@ -1043,3 +1043,39 @@ footer {
     margin: 0 auto 1rem;
   }
 }
+
+/* Ensure hamburger menu (navbar toggler) uses hidden system cursor */
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:hover,
+.navbar-toggler .navbar-toggler-icon {
+  cursor: none !important;
+}
+
+/* Hide cursor on contact form controls */
+#contact input.form-control,
+#contact textarea.form-control,
+#contact select.form-control,
+#contact .form-control,
+#contact input,
+#contact textarea,
+#contact select {
+  cursor: none !important;
+}
+
+#contact input.form-control:hover,
+#contact input.form-control:focus,
+#contact textarea.form-control:hover,
+#contact textarea.form-control:focus,
+#contact select.form-control:hover,
+#contact select.form-control:focus,
+#contact .form-control:hover,
+#contact .form-control:focus,
+#contact input:hover,
+#contact input:focus,
+#contact textarea:hover,
+#contact textarea:focus,
+#contact select:hover,
+#contact select:focus {
+  cursor: none !important;
+}
