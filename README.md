@@ -39,10 +39,6 @@ The portfolio is fully responsive and optimized for:
 - Email: [alduinocalderon@gmail.com](mailto:alduinocalderon@gmail.com)
 - Upwork: [Profile](https://www.upwork.com/freelancers/~01b0a24881b1ddd018)
 
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
 ---
 
 ⭐️ From [Alduino Calderón](https://github.com/AlduinoCalderon)
